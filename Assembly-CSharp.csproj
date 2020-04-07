@@ -52,7 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\MusicPlayer.cs" />
-     <Compile Include="Assets\StarSparrow\Readme\Readme Files\Scripts\ReadmeStarSparrow.cs" />
+     <Compile Include="Assets\Player.cs" />
      <None Include="Assets\GalaxyBox2\instructions.txt" />
      <None Include="Assets\epyphany\ReadMe.txt" />
  <Reference Include="UnityEngine.CoreModule">
