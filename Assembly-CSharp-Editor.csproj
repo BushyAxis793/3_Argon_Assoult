@@ -51,7 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\StarSparrow\Readme\Readme Files\Scripts\Editor\ReadmeStarSparrowEditor.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>C:/Program Files (x86)/2017.4.39f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
  </Reference>
@@ -276,12 +276,8 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{3EE25A0A-784B-88FA-A9DA-308E300015C3}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{0872EFE4-941B-5758-A627-F14B2F62B4C6}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
-    <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
-      <Project>{5E6F9E8A-398A-59DB-1AD1-232ACB01C8A7}</Project>      <Name>Assembly-CSharp-Editor-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

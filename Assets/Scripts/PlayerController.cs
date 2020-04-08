@@ -4,19 +4,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class Player : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
+    //todo why sometimes slow on first play scene
 
-    [Tooltip("In ms^-1")] [SerializeField] float speed = 20f;
+    [Header("General")]
+    [Tooltip("In ms^-1")] [SerializeField] float ControlSpeed = 20f;
     [Tooltip("In m")] [SerializeField] float xRange = 5f;
     [Tooltip("In m")] [SerializeField] float yRange = 5f;
 
+    [Header("Screen-position based")]
     [SerializeField] float positionPitchFactor = -5f;
-    [SerializeField] float controlPitchFactor = -20f;
     [SerializeField] float positionYawFactor = 5f;
+
+    [Header("Control-throw based")]
     [SerializeField] float controlRollFactor = -20f;
+    [SerializeField] float controlPitchFactor = -20f;
 
     float xThrow, yThrow;
+    bool isControlEnabled = true;
 
     // Use this for initialization
     void Start()
@@ -24,12 +30,22 @@ public class Player : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        ProcessTranslation();
-        ProcessRotation();
+        if (isControlEnabled)
+        {
+            ProcessTranslation();
+            ProcessRotation();
 
+        }
+
+
+    }
+
+    void OnPlayerDeath() //called by strign reference
+    {
+        isControlEnabled = false;
     }
 
     private void ProcessRotation()
@@ -48,8 +64,8 @@ public class Player : MonoBehaviour
     {
         xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
         yThrow = CrossPlatformInputManager.GetAxis("Vertical");
-        float xOffset = xThrow * speed * Time.deltaTime;
-        float yOffset = yThrow * speed * Time.deltaTime;
+        float xOffset = xThrow * ControlSpeed * Time.deltaTime;
+        float yOffset = yThrow * ControlSpeed * Time.deltaTime;
 
         float rawXPos = transform.localPosition.x + xOffset;
         float clampedXPos = Mathf.Clamp(rawXPos, -xRange, xRange);

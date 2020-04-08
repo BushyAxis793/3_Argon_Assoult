@@ -51,10 +51,49 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\MusicPlayer.cs" />
-     <Compile Include="Assets\Player.cs" />
-     <None Include="Assets\GalaxyBox2\instructions.txt" />
-     <None Include="Assets\epyphany\ReadMe.txt" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\Utility\ActivateTrigger.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\Utility\AlphaButtonClickMask.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\Utility\AutoMobileShaderSwitch.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\Utility\AutoMoveAndRotate.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\Utility\CameraRefocus.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\Utility\CurveControlledBob.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\Utility\DragRigidbody.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\Utility\DynamicShadowSettings.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\Utility\EventSystemChecker.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\Utility\FollowTarget.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\Utility\ForcedReset.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\Utility\FOVKick.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\Utility\FPSCounter.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\Utility\LerpControlledBob.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\Utility\ObjectResetter.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\Utility\ParticleSystemDestroyer.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\Utility\PlatformSpecificContent.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\Utility\SimpleActivatorMenu.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\Utility\SimpleMouseRotator.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\Utility\SmoothFollow.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\Utility\TimedObjectActivator.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\Utility\TimedObjectDestructor.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\Utility\WaypointCircuit.cs" />
+     <Compile Include="Assets\Assets Packs\Standard Assets\Utility\WaypointProgressTracker.cs" />
+     <Compile Include="Assets\CollisionHandler.cs" />
+     <Compile Include="Assets\Scripts\MusicPlayer.cs" />
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\SceneLoader.cs" />
+     <None Include="Assets\Assets Packs\GalaxyBox2\instructions.txt" />
+     <None Include="Assets\Assets Packs\epyphany\ReadMe.txt" />
+     <None Include="Assets\Assets Packs\Standard Assets\Fonts\OpenSans\License!.txt" />
+     <None Include="Assets\Assets Packs\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>C:/Program Files (x86)/2017.4.39f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
  </Reference>
@@ -229,10 +268,6 @@
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>C:/Users/Mikołaj/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{3EE25A0A-784B-88FA-A9DA-308E300015C3}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
