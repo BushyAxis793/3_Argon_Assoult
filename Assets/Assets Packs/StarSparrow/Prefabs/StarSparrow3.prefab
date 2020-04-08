@@ -69,6 +69,7 @@ GameObject:
   - component: {fileID: 4530302269161020}
   - component: {fileID: 33134760360706414}
   - component: {fileID: 23545005152539550}
+  - component: {fileID: 114559393201886142}
   m_Layer: 0
   m_Name: StarSparrow3
   m_TagString: Untagged
@@ -173,14 +174,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1404724577958374}
-  m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.3535534, y: 0.61237246, z: 0.3535534, w: -0.61237246}
+  m_LocalPosition: {x: 16.885033, y: -30.365726, z: 51.919994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4255112445886444}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &4541281652336296
 Transform:
   m_ObjectHideFlags: 1
@@ -321,3 +322,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7, y: 0.6, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114559393201886142
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1404724577958374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df60c1c4399637d41bc7dc41587d5afd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathFX: {fileID: 1447345572696782, guid: 9d354bc1c320a3f4b902166e02528e92, type: 2}
+  parent: {fileID: 0}
