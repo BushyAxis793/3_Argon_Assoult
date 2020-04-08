@@ -85,6 +85,8 @@ GameObject:
   - component: {fileID: 4465035140963908}
   - component: {fileID: 33606436300854868}
   - component: {fileID: 23158753764505530}
+  - component: {fileID: 65682708168979610}
+  - component: {fileID: 114158485634656484}
   m_Layer: 0
   m_Name: StarSparrow11
   m_TagString: Untagged
@@ -160,14 +162,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1664269169174470}
-  m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.3535534, y: -0.61237246, z: 0.3535534, w: 0.61237246}
+  m_LocalPosition: {x: 542.1, y: 152.1, z: 43.8}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 4010974493783442}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 60}
 --- !u!4 &4548787294215660
 Transform:
   m_ObjectHideFlags: 1
@@ -297,6 +299,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 0.3, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65682708168979610
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1664269169174470}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.945589, y: 1.4957175, z: 13.117719}
+  m_Center: {x: -0.00000095367386, y: -0.000007659199, z: -7.907224e-13}
 --- !u!65 &65794191895227248
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -321,3 +335,14 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8, y: 0.8, z: 3.3}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114158485634656484
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1664269169174470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df60c1c4399637d41bc7dc41587d5afd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
