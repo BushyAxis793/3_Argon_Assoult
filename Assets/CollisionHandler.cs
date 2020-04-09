@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CollisionHandler : MonoBehaviour {
+public class CollisionHandler : MonoBehaviour
+{
 
-    [Tooltip("In Seconds")][SerializeField] float levelLoadDelay = 1f;
-    [Tooltip("FX prefab on player")][SerializeField] GameObject deathFX;
+    [Tooltip("In Seconds")] [SerializeField] float levelLoadDelay = 1f;
+    [Tooltip("FX prefab on player")] [SerializeField] GameObject deathFX;
 
-    void OnCollisionEnter(Collision other)
+    void OnTriggerEnter(Collider other)
     {
         StartDeathSequence();
         deathFX.SetActive(true);
-        Invoke("ReloadScene",levelLoadDelay);
+        Invoke("ReloadScene", levelLoadDelay);
     }
 
     private void StartDeathSequence()
