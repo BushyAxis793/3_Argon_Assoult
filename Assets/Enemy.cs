@@ -29,10 +29,12 @@ public class Enemy : MonoBehaviour
         ProcessHit();
         if (hits <= 1)
         {
-
             KillEnemy();
         }
+
+        print("partciles collided" + gameObject.name);
     }
+
 
     private void ProcessHit()
     {

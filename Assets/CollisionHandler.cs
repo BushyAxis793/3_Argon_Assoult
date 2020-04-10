@@ -14,6 +14,7 @@ public class CollisionHandler : MonoBehaviour
         StartDeathSequence();
         deathFX.SetActive(true);
         Invoke("ReloadScene", levelLoadDelay);
+        print("Collided");
     }
 
     private void StartDeathSequence()

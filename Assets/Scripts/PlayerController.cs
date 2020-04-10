@@ -10,17 +10,17 @@ public class PlayerController : MonoBehaviour
 
     [Header("General")]
     [Tooltip("In ms^-1")] [SerializeField] float ControlSpeed = 20f;
-    [Tooltip("In m")] [SerializeField] float xRange = 5f;
-    [Tooltip("In m")] [SerializeField] float yRange = 5f;
+    [Tooltip("In m")] [SerializeField] float xRange = 12f;
+    [Tooltip("In m")] [SerializeField] float yRange = 12f;
     [SerializeField] GameObject[] guns;
 
     [Header("Screen-position based")]
     [SerializeField] float positionPitchFactor = -5f;
-    [SerializeField] float positionYawFactor = 5f;
+    [SerializeField] float controlPitchFactor = -30f;
 
     [Header("Control-throw based")]
-    [SerializeField] float controlRollFactor = -20f;
-    [SerializeField] float controlPitchFactor = -20f;
+    [SerializeField] float controlRollFactor = -5f;
+    [SerializeField] float positionYawFactor = -5f;
 
     float xThrow, yThrow;
     bool isControlEnabled = true;

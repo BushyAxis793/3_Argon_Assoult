@@ -175,7 +175,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1404724577958374}
   m_LocalRotation: {x: 0.3535534, y: 0.61237246, z: 0.3535534, w: -0.61237246}
-  m_LocalPosition: {x: 177.35, y: -269.95, z: -78.6}
+  m_LocalPosition: {x: 93.8, y: -125.4, z: 83.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4255112445886444}
@@ -335,3 +335,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 1447345572696782, guid: 9d354bc1c320a3f4b902166e02528e92, type: 2}
   parent: {fileID: 0}
+  scorePerHit: 12
+  hits: 10
