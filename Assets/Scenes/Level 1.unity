@@ -529,11 +529,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4530302269161020, guid: e261f7b66a8f0fd4492d87df1eee4222, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 107
+      value: 126.6
       objectReference: {fileID: 0}
     - target: {fileID: 4530302269161020, guid: e261f7b66a8f0fd4492d87df1eee4222, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -148.3
+      value: -176
       objectReference: {fileID: 0}
     - target: {fileID: 4530302269161020, guid: e261f7b66a8f0fd4492d87df1eee4222, type: 2}
       propertyPath: m_LocalPosition.z
@@ -991,13 +991,40 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1600522018893952, guid: 34ae7c8ef1d2c9c43bb00bc70d4c9483, type: 2}
-      propertyPath: m_IsActive
+    - target: {fileID: 198733393842327746, guid: 34ae7c8ef1d2c9c43bb00bc70d4c9483,
+        type: 2}
+      propertyPath: moveWithTransform
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1674677828482070, guid: 34ae7c8ef1d2c9c43bb00bc70d4c9483, type: 2}
-      propertyPath: m_IsActive
+    - target: {fileID: 198579655449961134, guid: 34ae7c8ef1d2c9c43bb00bc70d4c9483,
+        type: 2}
+      propertyPath: moveWithTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198579655449961134, guid: 34ae7c8ef1d2c9c43bb00bc70d4c9483,
+        type: 2}
+      propertyPath: randomSeed
+      value: 111458820
+      objectReference: {fileID: 0}
+    - target: {fileID: 198733393842327746, guid: 34ae7c8ef1d2c9c43bb00bc70d4c9483,
+        type: 2}
+      propertyPath: CollisionModule.minKillSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198579655449961134, guid: 34ae7c8ef1d2c9c43bb00bc70d4c9483,
+        type: 2}
+      propertyPath: CollisionModule.minKillSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198733393842327746, guid: 34ae7c8ef1d2c9c43bb00bc70d4c9483,
+        type: 2}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 198579655449961134, guid: 34ae7c8ef1d2c9c43bb00bc70d4c9483,
+        type: 2}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 800
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 34ae7c8ef1d2c9c43bb00bc70d4c9483, type: 2}
